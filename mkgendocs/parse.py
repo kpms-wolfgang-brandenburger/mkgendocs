@@ -729,6 +729,8 @@ class Extract:
                                 pass
                             else:
                                 methods.append(function.name)
+                        else: 
+                            methods.append(function.name)
 
         return methods
 
