@@ -434,7 +434,7 @@ class GoogleDocString(DocString):
 
     def _compile_arg(self):
         return re.compile(
-            r'(\w*)\s*(\(.*\))?\s*%s(.*)' % self._config['arg_delimiter'])
+            r'^(\w*)\s*(\(.*\))?\s*%s(.*)' % self._config['arg_delimiter'])
 
     def _err_if_missing_indent(self, lines, lineno):
         next_line = _get_next_line(lines, lineno)
